@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatRoomRl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvMsgItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="0dp"
+            app:strokeColor="#AADDDD"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:strokeWidth="@dimen/_2sdp"
+            >
+
+
+                <TextView
+                    android:id="@+id/messageTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|end"
+                    android:padding="@dimen/_5sdp"
+                    android:background="#AADDDD"
+                    android:textColor="#494747"
+                    android:textSize="@dimen/_14sdp"
+                    tools:text="Message" />
+
+        </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
